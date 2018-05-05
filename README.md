@@ -1,4 +1,4 @@
-# Deterministic-Finite-Automata / Autômato Finito Determinístico
+# Deterministic-Finite-Automata
 
 Feel free to use this software for tests and improvements.
 
