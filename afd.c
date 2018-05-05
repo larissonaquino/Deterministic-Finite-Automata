@@ -1,6 +1,6 @@
 /*
 -----------------------------------------------
-developed by L·risson Aquino
+developed by L√°risson Aquino
 Agosto, 27, 2017
 -----------------------------------------------
 */
@@ -58,7 +58,7 @@ int main(){
         matriz[i][2] = transicao[contador++];
         contador++;
     }
-/* //IMPRIME A MATRIZ DE TRANSI«√O
+/* //IMPRIME A MATRIZ DE TRANSI√á√ÉO
     for(i=0; i<20; i++){
         for(j=0; j<3; j++){
             printf("%c ", matriz[i][j]);
@@ -74,25 +74,19 @@ entrada:
     int aux_final = estado_inicial;
     char *c, xchar;
     for(i=0, contador=0; i<linhas; i++, contador++){
-        //c = &matriz[i][0];
         xchar = matriz[i][0];
         c = &xchar;
-        //printf("atoi: %d\n", atoi(c));
+        
         if(atoi(c) == aux_final){
-            //printf("cmp: %c == %c\n", input[contador], matriz[i][1]);
             if(input[contador] == matriz[i][1]){
                 c = &matriz[i][2];
                 *(c+1) = '\0';
-                //printf("aux atual: %d\n", aux_final);
                 aux_final = atoi(c);
-                //printf("aux depois: %d\n", aux_final);
                 i=-1;
             }else{
-                //printf("else 1\n");
                 contador--;
                 continue;}
         }else{
-            //printf("else 2\n");
             contador--;
             continue;
         }
