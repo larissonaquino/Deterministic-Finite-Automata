@@ -12,6 +12,9 @@ Agosto, 27, 2017
 #define MAXSIZE 10000
 
 int main(){
+
+    printf("teste pull request");
+
     char alfabeto[MAXSIZE], transicao[MAXSIZE], input[MAXSIZE], op;
     int qtd_estados, estado_inicial, qtd_finais, i, j;
     
